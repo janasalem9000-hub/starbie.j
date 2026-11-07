@@ -12,12 +12,16 @@ I wanted to understand how real circuit boards are designed and made, from the s
 - The OLED and MPU6050 share the same I2C lines (SDA and SCL).
 - A ground fill on both sides of the board connects all the ground pins.
 
-## Parts
-- XIAO ESP32-C3
-- 0.96" SSD1306 OLED (4-pin)
-- MPU6050 module (8-pin)
-- DHT11 sensor + 10k resistor
-- 2 push buttons
+## Bill of Materials
+| Part | Quantity | Notes |
+|---|---|---|
+| Seeed XIAO ESP32-C3 | 1 | Microcontroller |
+| Push button (SW_Push) | 2 | User input |
+| 0.96" SSD1306 OLED (4-pin I2C) | 1 | Display |
+| MPU6050 module (8-pin) | 1 | Motion sensor |
+| DHT11 sensor | 1 | Temperature and humidity |
+| 10k resistor | 1 | Pull-up for DHT11 |
+| Starbie PCB | 1 | Star-shaped custom board |
 
 ## Pictures
 ![PCB layout](board.png)
